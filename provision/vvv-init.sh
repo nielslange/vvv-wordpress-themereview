@@ -3,8 +3,8 @@ echo "Commencing Theme Review Setup"
 
 # Make a database, if we don't already have one
 echo "Creating database (if it's not already there)"
-mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS theme_review"
-mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON theme_review.* TO wp@localhost IDENTIFIED BY 'wp';"
+mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS wordpress_themereview"
+mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON wordpress_themereview.* TO wp@localhost IDENTIFIED BY 'wp';"
 
 # Download WordPress
 if [ ! -d htdocs ]
